@@ -1,0 +1,32 @@
+{
+  "name": "animate-svg",
+  "version": "0.0.2",
+  "description": "Animate SVG paths & lines",
+  "main": "index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf lib && tsc",
+    "build-publish": "sh build/publish.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inker/animate-svg.git"
+  },
+  "keywords": [
+    "animate",
+    "svg",
+    "path",
+    "line",
+    "stroke"
+  ],
+  "author": "Anton Veselyev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/inker/animate-svg/issues"
+  },
+  "homepage": "https://github.com/inker/animate-svg#readme",
+  "devDependencies": {
+    "typescript": "^2.2.1"
+  }
+}
