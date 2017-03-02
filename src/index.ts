@@ -1,4 +1,4 @@
-export type SVGGeometryElement = (SVGPathElement | SVGLineElement) & { getTotalLength: () => number }
+export type SVGGeometryElement = SVGPathElement | SVGLineElement
 
 function getLength(path: SVGGeometryElement) {
     if (typeof path.getTotalLength === 'function') {
