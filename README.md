@@ -1,5 +1,7 @@
 # animate-svg
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/inker/animate-svg.svg)](https://greenkeeper.io/)
+
 [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Dependency status][david-dm-image]][david-dm-url] [![Dev Dependency status][david-dm-dev-image]][david-dm-dev-url]
 
 Easily animate an SVG line or path to look like it's animating itself.
