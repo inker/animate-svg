@@ -15,8 +15,8 @@ function getLength(path: SVGGeometryElement) {
 
 function transitionEndPromise(path: SVGGeometryElement) {
     return new Promise<Event>((resolve, reject) => {
-        path.addEventListener('transitionend', e => {
-            path.removeEventListener('transitionend', resolve)
+        path.addEventListener('transitionend', function handler(e) {
+            path.removeEventListener('transitionend', handler)
             resolve(e)
         })
     })
@@ -30,8 +30,8 @@ export default (path: SVGGeometryElement, speed: number, reverse = false) => {
     const promise = transitionEndPromise(path)
 
     const { style } = path
-    style.transition = null
-    style.opacity = null
+    style.transition = ''
+    style.opacity = ''
     style.strokeDasharray = `${length} ${length}`
     style.strokeDashoffset = initialOffset.toString()
     path.getBoundingClientRect()
