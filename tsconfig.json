@@ -6,6 +6,7 @@
         // "watch": true,
         "pretty": true,
         "lib": [ "dom", "es7" ],
+        "strictNullChecks": true,
         "declaration": true,
         "alwaysStrict": true,
         "outDir": "lib"

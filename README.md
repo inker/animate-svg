@@ -17,7 +17,10 @@ import animateSvg from 'animate-svg'
 async foo() {
   // blabla
   const path = document.getElementById('some-svg-path-element')
+  // the animateSvg function esentially returns a promise
+  // so you can await it if you use it in an async function
   await animateSvg(path, 1, false)
+  // blablabla
 }
 ```
 
