@@ -14,7 +14,7 @@ Basic usage:
 ```javascript
 import animateSvg from 'animate-svg'
 
-async foo() {
+async function foo() {
   // blabla
   const path = document.getElementById('some-svg-path-element')
   // the animateSvg function esentially returns a promise
@@ -23,6 +23,10 @@ async foo() {
   // blablabla
 }
 ```
+The function `animateSvg` accepts 3 parameters:
+- the `SVGPathElement` or `SVGLineElement` to animate
+- the **speed** at which the animation should occur (pixels per millisecond)
+- (optional) direction of the animation: `true` is for reverse animation, `false` is for normal
 
 [npm-url]: https://npmjs.org/package/animate-svg
 [downloads-image]: http://img.shields.io/npm/dm/animate-svg.svg
