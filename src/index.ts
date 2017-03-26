@@ -22,10 +22,8 @@ function getLineLength(path: SVGLineElement) {
     return Math.sqrt(x * x + y * y)
 }
 
-const getLength = (path: SVGGeometryElement) =>
-    typeof path.getTotalLength === 'function'
-    ? (path as SVGPathElement).getTotalLength()
-    : getLineLength(path as SVGLineElement)
+const getLength = (path: SVGGeometryElement): number =>
+    typeof path.getTotalLength === 'function' ? path.getTotalLength() : getLineLength(path as SVGLineElement)
 
 export default (path: SVGGeometryElement, speed: number, reverse = false) => {
     const length = getLength(path)
